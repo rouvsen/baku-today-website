@@ -8,6 +8,12 @@
         body {
             margin: 0px;
         }
+        .container {
+            width: 80%;
+            max-width: 1300px;
+            margin: 0 auto;
+            background-color: rgb(219, 200, 217);
+        }
         header {
             display: flex;
             align-items: center;
@@ -23,7 +29,8 @@
             display: flex;
         }
         button {
-            width: 50%;
+            font-size: 20px;
+            width: 120px;
             height: 4vh;
             background-color: coral;
             margin-left: 10px;
@@ -36,9 +43,85 @@
             transition: 0.5s ease-in-out;
             background-color: turquoise;
         }
+        ul {
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content:center;
+            gap: 100px;
+            padding: 10px;
+            list-style-type: none;
+            overflow-x: hidden;
+        }
+        li:hover {
+            transform: scale(1.2);
+            transition: 0.3s ease-in;
+        }
+        a {
+            text-decoration: none;
+        }
+        .container-news {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .biggest-news {
+            width: 400px;
+            height: 400px;
+            background: lightblue;
+            margin: 10px;
+            background-image: url(photo.png);
+        }
+        .secondary-news {
+            width: 300px;
+            height: 300px;
+            background: lightblue;
+            margin: 10px;
+            background-image: url(photo.png);
+        }
+        .biggest-news h1, p{
+            text-align: center;
+            color: aliceblue;
+        }
+        .secondary-news h1, p{
+            text-align: center;
+            color: aliceblue;
+        }
+        .biggest-news{
+            border-radius: 10px;
+        }
+        .biggest-news:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+            border-radius: 20px;
+            cursor: progress;
+        }
+        .secondary-news:hover{
+            cursor: progress;
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+            border-radius: 20px;
+        }
+        .secondary-news{
+            border-radius: 10px;
+        }
+        marquee {
+            padding-top: 17px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: rgb(28, 188, 227);
+            width: 100%;
+            height: 10vh;
+            border-radius: 6px;
+        }
+        #clock {
+            text-align: center;
+            margin: 5px auto;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
     <header>
         <div class="logo-name">
             <svg height="100" width="100" >
@@ -51,5 +134,56 @@
             <button>Sign in</button>
         </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#">agenda</a></li>
+            <li><a href="#">sports</a></li>
+            <li><a href="#">economy</a></li>
+            <li><a href="#">magazine</a></li>
+            <li><a href="#">culture</a></li>
+            <li><a href="#">technology</a></li>
+            <li><a href="#">education</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container-news">
+            <article class="biggest-news">
+                <h1>News 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, possimus!</p>
+            </article>
+            <article class="secondary-news">
+                <h1>News 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, possimus!</p>
+            </article>
+            <article class="secondary-news">
+                <h1>News 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, possimus!</p>
+            </article>
+            <article class="secondary-news">
+                <h1>News 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, possimus!</p>
+            </article>
+            <article class="secondary-news">
+                <h1>News 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, possimus!</p>
+            </article>
+        </div>
+    </main>
+    <marquee behaviour="scroll" direction="right"><img width="60px" src="toy-train.png" alt="train"></marquee>
+    <footer>
+        <ul>
+            <li><span>Email:</span>rouvsen@gmail.com</li>
+            <li><span>Phone:</span>+090909090909</li>
+            <li><span>Address:</span>89.239.2.22</li>
+        </ul>
+        <h1 id="clock"></h1>
+    </footer>
+    <script>
+        const showDate = () => {
+            document.getElementById("clock").innerHTML = new Date();
+        }
+        setInterval(showDate, 1000)
+    </script>
+</div>
 </body>
 </html>
