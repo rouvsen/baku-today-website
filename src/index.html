@@ -118,6 +118,13 @@
             text-align: center;
             margin: 5px auto;
         }
+        #train-img:hover {
+            padding: 5px;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            transform: scale(1.5);
+            transition: 0.3s;
+        }
     </style>
 </head>
 <body>
@@ -169,7 +176,7 @@
             </article>
         </div>
     </main>
-    <marquee behaviour="scroll" direction="right"><img width="60px" src="toy-train.png" alt="train"></marquee>
+    <marquee behaviour="scroll" direction="right"><img id="train-img" width="60px" src="toy-train.png" alt="train"></marquee>
     <footer>
         <ul>
             <li><span>Email:</span>rouvsen@gmail.com</li>
