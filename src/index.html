@@ -69,14 +69,14 @@
             height: 400px;
             background: lightblue;
             margin: 10px;
-            background-image: url(photo.png);
+            background-image: url(./images/photo.png);
         }
         .secondary-news {
             width: 300px;
             height: 300px;
             background: lightblue;
             margin: 10px;
-            background-image: url(photo.png);
+            background-image: url(./images/photo.png);
         }
         .biggest-news h1, p{
             text-align: center;
@@ -116,7 +116,8 @@
         }
         #clock {
             text-align: center;
-            margin: 5px auto;
+            margin: 2px;
+            font-size: medium;
         }
         #train-img:hover {
             padding: 5px;
@@ -176,14 +177,14 @@
             </article>
         </div>
     </main>
-    <marquee behaviour="scroll" direction="right"><img id="train-img" width="60px" src="toy-train.png" alt="train"></marquee>
+    <marquee behaviour="scroll" direction="right"><img id="train-img" width="60px" src="./images/toy-train.png" alt="train"></marquee>
     <footer>
         <ul>
             <li><span>Email:</span>rouvsen@gmail.com</li>
             <li><span>Phone:</span>+090909090909</li>
             <li><span>Address:</span>89.239.2.22</li>
         </ul>
-        <h1 id="clock"></h1>
+        <h4 id="clock"></h4>
     </footer>
     <script>
         const showDate = () => {
