@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(228, 227, 199, 0.3);
+    width: 100%;
+    height: 100vh;
+}
+.login-page-border {
+    display: flex;
+    border: 1px solid red;
+    border-radius: 7px;
+}
+.form-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-page {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)),
+        url("../images/login-background.png"); 
+    background-size: cover;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 500px;
+    width: 500px;
+}
+.info-page h1 {
+    padding: 100px 100px;
+}
+#info-page-par {
+    padding: 5px 0;
+    font-size: 25px; 
+    color: red; 
+    font-weight: bold; 
+    font-style: italic; 
+    box-shadow: 5px 5px 10px gray;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+}
+#query-sign-up {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.form-sec-container {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    flex-direction: column;
+    padding: 80px;
+    margin-left: 5px;
+}
+#oauth-2-sec {
+    margin: 15px;
+}
+#form-sec {
+    margin: 15px;
+}
+#sign-up {
+    color: rgb(255, 255, 255);
+    background-color: rgba(2, 66, 95, 0.7);
+    border-radius: 10px;
+    padding: 6px 30px;
+}
+#sign-in-word {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+#email, #password {
+    margin: 2px;
+    padding: 3px;
+    background-color: rgb(217, 247, 247);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#sign-in-btn {
+    margin-top: 8px;
+    background-color: rgba(0, 0, 255, 0.85);
+    color: aliceblue;
+    padding: 3px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#forgot-pass {
+    margin-left: 10px;
+    font-size: small;
+    color: blueviolet;
+    text-decoration: none;
+}
